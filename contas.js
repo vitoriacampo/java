@@ -17,7 +17,10 @@ frm.addEventListener("submit", (e) => {
 
     resposta = resposta + descrição + " - R$: " + valor.toFixed(2) + "\n"
 
-    resp1.innerText = `${resposta}----------------------------------'
-    resp2.innerText
-    
+    resp1.innerText = `${resposta}----------------------------------`
+    resp2.innerText = `${numContas} Conta(s) - Total R$: ${valTotal.toFixed(2)}`
+
+    frm.inDescrição.value = ""
+    frm.inValor = ""
+    frm.inDescrição.focus()
 })
